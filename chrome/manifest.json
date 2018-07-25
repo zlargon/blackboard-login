@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "myNEU and Blackboard Login Helper",
+  "description": "Auto Login myNEU and Blackboard",
+  "version": "0.0.1",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://my.northeastern.edu/",
+        "https://northeastern.blackboard.com/*",
+        "https://neuidmsso.neu.edu/cas-server/login?*"
+      ],
+      "js": ["main.js"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "https://my.northeastern.edu/",
+    "https://northeastern.blackboard.com/*",
+    "https://neuidmsso.neu.edu/cas-server/login?*"
+  ]
+}
