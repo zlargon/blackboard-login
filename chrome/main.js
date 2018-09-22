@@ -1,3 +1,12 @@
+(() => {
+const USER_NAME = '';
+const PASSWORD = '';
+
+if (!USER_NAME || !PASSWORD) {
+  alert('Please setup your username and password before using the "NEU Login" chrome extension.');
+  return;
+}
+
 switch (window.location.host) {
   // MyNEU
   case 'my.northeastern.edu':
@@ -11,11 +20,12 @@ switch (window.location.host) {
 
   // CAS
   case 'neuidmsso.neu.edu':
-    document.getElementById('username').value = '';  // username
-    document.getElementById('password').value = '';  // password
+    document.getElementById('username').value = USER_NAME;
+    document.getElementById('password').value = PASSWORD;
     document.getElementsByClassName('btn-submit')[0].click();
     break;
 
   default:
     break;
 }
+})();
