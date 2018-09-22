@@ -10,6 +10,7 @@
     {
       "matches": [
         "https://my.northeastern.edu/",
+        "https://my.northeastern.edu/welcome",
         "https://northeastern.blackboard.com/*",
         "https://neuidmsso.neu.edu/cas-server/login?*"
       ],
@@ -19,6 +20,7 @@
   "permissions": [
     "tabs",
     "https://my.northeastern.edu/",
+    "https://my.northeastern.edu/welcome",
     "https://northeastern.blackboard.com/*",
     "https://neuidmsso.neu.edu/cas-server/login?*"
   ]
